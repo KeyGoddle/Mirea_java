@@ -9,4 +9,5 @@ public class Main {
         System.out.println("------------------");
         Singleton3.getInstance();
     }
+    
 }
