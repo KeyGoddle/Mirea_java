@@ -7,17 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Введите количество строк");
-        float a = scan.nextFloat();
-        string[]as;
-        System.out.println("Введите строку");
-        float str0 = scan.nextString();
-        for (int i=0; i<a; i++) {
-            System.out.println("Введите строку");
-            float str1 = scan.nextString();
-            x=str0.length;
-            y=str1.length;
-            toConsume comp = new toConsume();
+        System.out.println("Введите первое число");
+        float x= scan.nextFloat();
+        System.out.println("Введите второе число");
+        float y = scan.nextFloat();
+        toConsume comp = new toConsume();
             comp.compare(x, y);
         }
 
