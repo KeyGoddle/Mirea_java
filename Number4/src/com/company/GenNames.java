@@ -3,7 +3,7 @@ package com.company;
 import java.util.Random;
 
 public class GenNames implements Runnable {
-    private String[] names = {"David", "Maria", "Patrick", "John", "Kent", "Jessica", "Agnessa", "Robert", "Jefrey", "Samantha", "Elizabeth"};
+    private String[] names = {"Helen", "Marko", "Patrick", "John", "Kent", "Jessica", "Agnessa", "Robert", "Jefrey", "Samantha", "Elizabeth"};
     private Random random = new Random();
 
     @Override
