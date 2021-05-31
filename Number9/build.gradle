@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.0'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task hello {
+    doLast {
+        println "Hello"
+    }
+}
+
+
+jar {
+    manifest {
+        attributes 'Main': 'Main'
+    }
+}
+tasks.register('hi') {
+    doLast {
+        println 'Hello world!'
+    }
+}
